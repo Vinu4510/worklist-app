@@ -1,0 +1,205 @@
+{
+	"toolList":[
+
+	{
+
+		"toolsName": "Mitre Saw",
+
+		"uses": "Used for making precise crosscuts and miters in wood.",
+
+		"availability": "In Stock",
+
+		"price": 12500,
+
+		"unit": "INR",
+
+		"image": "",
+
+		"weight": 13.5,
+
+		"warranty": 2
+
+	},
+
+	{
+
+		"toolsName": "Hand Saw",
+
+		"uses": "Used for manual cutting of wood and other soft materials.",
+
+		"availability": "In Stock",
+
+		"price": 450,
+
+		"unit": "INR",
+
+		"image": "",
+
+		"weight": 0.7,
+
+		"warranty": 1
+
+	},
+
+	{
+
+		"toolsName": "Hammer stock",
+
+		"uses": "Used for driving nails and breaking objects.",
+
+		"availability": "Out of Stock",
+
+		"price": 350,
+
+		"unit": "INR",
+
+		"image": "",
+
+		"weight": 1.2,
+
+		"warranty": 1
+
+	},
+
+	{
+
+		"toolsName": "Angle Grinder",
+
+		"uses": "Used for grinding, cutting, and polishing surfaces.",
+
+		"availability": "In Stock",
+
+		"price": 3200,
+
+		"unit": "INR",
+
+		"image": "",
+
+		"weight": 2.5,
+
+		"warranty": 2
+
+	},
+
+	{
+
+		"toolsName": "Allen Key",
+
+		"uses": "Used to drive bolts and screws with hexagonal sockets.",
+
+		"availability": "In Stock",
+
+		"price": 150,
+
+		"unit": "INR",
+
+		"image": "",
+
+		"weight": 0.1,
+
+		"warranty": 0.5
+
+	},
+
+	{
+
+		"toolsName": "Drill",
+
+		"uses": "Used for making round holes or driving fasteners.",
+
+		"availability": "In Stock",
+
+		"price": 2200,
+
+		"unit": "INR",
+
+		"image": "",
+
+		"weight": 1.8,
+
+		"warranty": 1
+
+	},
+
+	{
+
+		"toolsName": "Cordless Drill",
+
+		"uses": "Used for drilling and screwing without a power cord.",
+
+		"availability": "Out of Stock",
+
+		"price": 4800,
+
+		"unit": "INR",
+
+		"image": "",
+
+		"weight": 1.6,
+
+		"warranty": 2
+
+	},
+
+	{
+
+		"toolsName": "Table Saw",
+
+		"uses": "Used for ripping and crosscutting wood on a table.",
+
+		"availability": "In Stock",
+
+		"price": 18500,
+
+		"unit": "INR",
+
+		"image": "",
+
+		"weight": 28,
+
+		"warranty": 3
+
+	},
+
+	{
+
+		"toolsName": "File",
+
+		"uses": "Used for smoothing or shaping a material surface.",
+
+		"availability": "In Stock",
+
+		"price": 120,
+
+		"unit": "INR",
+
+		"image": "",
+
+		"weight": 0.3,
+
+		"warranty": 0.5
+
+	},
+
+	{
+
+		"toolsName": "Tile Cutter",
+
+		"uses": "Used for cutting ceramic tiles with precision.",
+
+		"availability": "In Stock",
+
+		"price": 1450,
+
+		"unit": "INR",
+
+		"image": "",
+
+		"weight": 4.5,
+
+		"warranty": 1
+
+	}
+
+]
+}

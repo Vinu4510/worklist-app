@@ -1,0 +1,123 @@
+{
+  "_version": "1.65.0",
+  "sap.app": {
+    "id": "app.splitapp",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.17.1",
+      "toolsId": "b741cb4d-4583-4097-b351-e38969fd22f5"
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.134.1",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "app.splitapp.i18n.i18n"
+        }
+      },
+      "ToolModel":{
+        "type":"sap.ui.model.json.JSONModel",
+        "uri":"model/mockData/toolsData.json"
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "transition": "slide",
+        "type": "View",
+        "viewType": "XML",
+        "path": "app.splitapp.view",
+        "async": true,
+        "viewPath": "app.splitapp.view"
+      },
+      "routes": [
+        {
+          "name": "RouteMaster",
+          "pattern": "",
+          "target":["TargetMasterView","TargetEmpty"]
+          
+        },
+        {
+          "name": "RouteDetail",
+          "pattern": "view2/{index}",
+          "target":"TargetDetail"
+          
+        }
+      ],
+      "targets": {
+        "TargetMasterView": {
+          "id": "MasterView",
+          "controlAggregation":"masterPages",
+          "name": "MasterView",
+          "viewLevel":2
+        },
+        "TargetDetail":{
+          "id": "idDetail",
+          "name": "DetailView",
+          "controlAggregation":"detailPages",
+          "viewLevel":2
+        },
+        "TargetEmpty":{
+          "id":"idEmpty",
+          "name":"EmptyView",
+          "controlAggregation": "detailPages",
+          "viewLevel":1
+
+        }
+
+      }
+    },
+    "rootView": {
+      "viewName": "app.splitapp.view.AppView",
+      "type": "XML",
+      "id": "App",
+      "async": true
+    }
+  }
+}

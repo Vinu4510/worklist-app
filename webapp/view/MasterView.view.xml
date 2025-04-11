@@ -1,0 +1,52 @@
+<mvc:View controllerName="app.splitapp.controller.MasterView"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page title="list view">
+		<headerContent>
+			<Button icon="sap-icon://sort" press="onSort"></Button>
+			<Button icon="sap-icon://action" tooltip="Share" press="onDetailView"/>
+			
+		</headerContent>
+		<subHeader>
+			<OverflowToolbar>
+				<SearchField search="onSearch" liveChange="onSearch"/>
+			</OverflowToolbar>
+		</subHeader>
+		<content>
+			<List items="{ToolModel>/toolList}" id="idListCtrl" mode="SingleSelectMaster" selectionChange="onItemSelect">
+				<items>
+					<ObjectListItem icon="https://i0.wp.com/1tb.favim.com/preview/7/728/7289/72895/7289584.png" intro="King of hell" number="1123000"
+						nuumberState="Success" numberUnit="Berry">
+						<attributes>
+							<ObjectAttribute text="{ToolModel>toolsName}" title="wado ichimonji"></ObjectAttribute>
+							<ObjectAttribute text="sword2" title="enma"></ObjectAttribute>
+							<ObjectAttribute text="sword3" title="kitetsu"></ObjectAttribute>
+						</attributes>
+						<firstStatus>
+							<ObjectStatus text="{ToolModel>availability}" state="Error" title="lost in multiverse"></ObjectStatus>
+						</firstStatus>
+					</ObjectListItem>
+					<!--<StandardListItem info="Pirate King" infoState="Error" title="Luffy"></StandardListItem>-->
+					<!--<CustomListItem>-->
+					<!--	<content>-->
+					<!--		<Label text="Luffy"></Label>-->
+					<!--		<Input width="200px"></Input>-->
+					<!--	</content>-->
+					<!--</CustomListItem>-->
+					<!--<DisplayListItem label="Luffy" value="3 million Berry"></DisplayListItem>-->
+					<!--<FeedListItem icon="https://images8.alphacoders.com/948/948337.png" info="all the best on your upcoming battle" sender="Naruto"-->
+					<!--	text="much waited battle since 25 years"></FeedListItem>-->
+				</items>
+			</List>
+		</content>
+		<footer>
+			<OverflowToolbar>
+				<ToolbarSpacer/>
+				<Button text="Accept" type="Accept"/>
+				<Button text="Reject" type="Reject"/>
+				<Button text="Edit"/>
+				<Button text="Delete"/>
+			</OverflowToolbar>
+		</footer>
+	</Page>
+</mvc:View>
