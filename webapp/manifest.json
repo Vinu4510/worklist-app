@@ -95,7 +95,7 @@
           "id": "MasterView",
           "controlAggregation":"masterPages",
           "name": "MasterView",
-          "viewLevel":2
+          "viewLevel":1
         },
         "TargetDetail":{
           "id": "idDetail",

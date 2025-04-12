@@ -9,6 +9,7 @@ sap.ui.define([
         var oModel=new JSONModel();
             oModel.loadData("/model/mockData/toolsData.json")
 				    this.getView().setModel(oModel,"ToolModel");
+            
       }
   });
 });

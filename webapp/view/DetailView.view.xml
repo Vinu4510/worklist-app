@@ -2,13 +2,56 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m"
     xmlns:f="sap.ui.layout.form">
-    <Page id="iddetail1" items="{ToolModel>/toolList}" title="Detail view" showNavButton="true" navButtonPress="onListView">
-    
+    <Page id="iddetail1" title="Detail view" showNavButton="true" navButtonPress="onListView">
+    <content>
 		<f:SimpleForm>
+
 						<Label text="tools Name" design="Bold" class="bold-class"></Label>
 						<Text text="{ToolModel>toolsName}"></Text>
 						<Label text="Weight"></Label>
 						<Text text="{ToolModel>weight}"></Text>
 					</f:SimpleForm>
+
+			 <IconTabBar>
+				<items>
+					<IconTabFilter icon="sap-icon://information">
+						<VBox>
+							<HBox>
+								<Label text="tools Name" design="Bold" class="bold-class"></Label>
+								<Text text="{ToolModel>toolsName}"></Text>
+							</HBox>	
+							<HBox>
+									<Label text="Weight"></Label>
+									<Text text="{ToolModel>weight}"></Text>						
+							</HBox>
+												
+						</VBox>
+					</IconTabFilter>
+					<IconTabFilter icon="sap-icon://supplier">
+						<Table items="{ToolModel>/supplierSet}">
+							<columns>
+								<Column>
+									<Text text="{ToolModel>toolsName}"></Text>
+								</Column>
+								<Column>
+									<Text text="{ToolModel>supplierName}"></Text>
+								</Column>
+
+							</columns>
+							<ColumnListItem>
+								<cells>
+									<Text text="{ToolModel>toolsName}"></Text>
+									<Text text="{ToolModel>supplierName}"></Text>
+								</cells>
+							</ColumnListItem>
+						</Table>
+					
+					</IconTabFilter>
+					<!-- <IconTabFilter icon=""></IconTabBar> -->
+				</items>
+			</IconTabBar> 
+	
+	
+	</content>
 	</Page>
 </mvc:View>
